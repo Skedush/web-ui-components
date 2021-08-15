@@ -1,0 +1,32 @@
+@import '/themes/index.less';
+.lidig-tree {
+  .ant-tree-list {
+    overflow-y: auto;
+    &::-webkit-scrollbar-thumb {
+      background-color: @ld-scrollbar-thumb;
+      border-radius: @ld-webkit-scrollbar-radius;
+    }
+    &::-webkit-scrollbar-track {
+      background: @ld-scrollbar-track-bg;
+      border-radius: @ld-webkit-scrollbar-radius;
+    }
+    &::-webkit-scrollbar {
+      width: @ld-webkit-scrollbar;
+    }
+    &::-webkit-scrollbar-corner {
+      border-radius: @ld-webkit-scrollbar-radius;
+    }
+    &::-webkit-scrollbar-track-piece {
+      border-radius: @ld-webkit-scrollbar-radius;
+    }
+    &:hover {
+      &::-webkit-scrollbar-thumb {
+        background-color: @ld-scrollbar-thumb-hover;
+      }
+    }
+
+    .ld-tree-search-value {
+      color: @ld-fc-warning;
+    }
+  }
+}

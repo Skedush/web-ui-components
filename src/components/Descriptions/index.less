@@ -1,0 +1,26 @@
+@import '/themes/index.less';
+
+.ant-descriptions-bordered.lidig-descriptions {
+  .ant-descriptions-header {
+    margin-top: @ld-spacing-ss;
+    margin-bottom: @ld-spacing-xxs;
+    .ant-descriptions-title {
+      color: @ld-fc-ma;
+      font-weight: 430;
+    }
+  }
+  .ant-descriptions-item-label {
+    background: @ld-descriptions-label-bg;
+    border-color: @ld-descriptions-bd;
+    color: @ld-fc-es;
+    text-align: right;
+    & + .ant-descriptions-item-content {
+      border-color: @ld-descriptions-bd;
+      color: @text-color-secondary;
+    }
+  }
+  .ant-descriptions-view,
+  .ant-descriptions-row {
+    border-color: @ld-descriptions-bd;
+  }
+}

@@ -1,0 +1,35 @@
+@import '/themes/index.less';
+.lidig-cascaderBox {
+  .ant-cascader-picker {
+    border: 0;
+    border-radius: 0;
+    background: @ld-form-bg;
+    color: @ld-fc-ma;
+  }
+  .ant-cascader-picker-focused {
+    background: @ld-form-foucs-bg;
+  }
+  .ant-cascader-input {
+    border-radius: 0;
+  }
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: @text-color-inverse;
+    opacity: 1; /* Firefox */
+  }
+  .anticon {
+    background-color: transparent;
+  }
+}
+.lidig-cascaderPopupDown {
+  color: @text-color-secondary;
+  .ant-cascader-menu-item:hover {
+    background: @table-row-hover-bg;
+  }
+  .ant-cascader-menu-item-active {
+    background: @body-background;
+  }
+}
+.has-error .ant-input {
+  background: #f3e1e1 !important;
+}

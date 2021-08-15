@@ -1,0 +1,38 @@
+@import '/themes/index.less';
+
+.lidig-input {
+  display: inline-block;
+  width: 100%;
+  .ant-input {
+    width: 100%;
+    background-color: @ld-form-bg;
+    color: @ld-fc-ma;
+    height: 33px;
+    border: 1px solid @ld-form-bd;
+    &:focus,
+    &:hover {
+      border-color: @ld-form-foucs-bd;
+    }
+  }
+  .ant-input-affix-wrapper {
+    border-radius: 0;
+    background-color: @ld-form-bg;
+  }
+
+  // .ant-input-disabled {
+  //   background: fadeout(@btn-disable-color, 65%) !important;
+  //   color: @text-color-inverse;
+  //   border-color: @btn-disable-color;
+  // }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: @ld-fc-es;
+    opacity: 1; /* Firefox */
+  }
+}
+
+.ant-form-item-has-error .ant-input,
+.ant-form-item-has-error .ant-input:hover {
+  background: @ld-form-error-bg !important;
+}

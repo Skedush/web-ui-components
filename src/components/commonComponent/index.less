@@ -1,0 +1,86 @@
+@import '/themes/index.less';
+
+.lidig-componentLoading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lidig-componentImg {
+  width: 100%;
+}
+
+.lidig-overflow-hidden {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.lidig-componentOperate {
+  white-space: nowrap;
+  cursor: pointer;
+  .ant-dropdown-trigger {
+    color: @ld-fc-es;
+    i {
+      transform: rotate(0deg);
+      transition: ease 300ms;
+    }
+  }
+  .ant-dropdown-open {
+    color: @ld-fc-br;
+    i {
+      transform: rotate(180deg);
+      transition: ease 300ms;
+    }
+  }
+  .lidig-componentmore {
+    color: @ld-fc-br;
+  }
+  .lidig-componentmoreIcon {
+    margin-left: @ld-spacing-xxs;
+    font-size: @ld-font-xs;
+  }
+}
+
+.icon::before {
+  display: block;
+}
+
+.lidig-componentDropdownOverlay {
+  .ant-dropdown-menu {
+    .ant-dropdown-menu-item {
+      color: @ld-fc-es;
+    }
+    .ant-dropdown-menu-item:hover {
+      background-color: @ld-hover-bg;
+      color: @ld-fc-br;
+    }
+  }
+}
+
+.lidig-componentConfigMask {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+  color: @text-selection-bg;
+  background: rgba(0, 0, 0, 0.534);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .lidig-componentMaskTitle {
+    font-size: 27px;
+    font-weight: bold;
+  }
+  .lidig-componentContent {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}

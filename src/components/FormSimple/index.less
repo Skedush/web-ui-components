@@ -1,0 +1,121 @@
+@import '/themes/index.less';
+
+.ant-col {
+  color: @text-color-secondary;
+}
+
+.ant-form-item-children {
+  textarea {
+    // resize: none;
+    // background: @body-background;
+    border-radius: 0;
+    color: @text-color-secondary;
+  }
+}
+
+.ant-radio {
+  color: @text-color-secondary;
+}
+
+.ant-radio-wrapper {
+  color: @text-color-secondary;
+}
+
+.ant-checkbox-group-item {
+  span {
+    color: @text-color-secondary;
+  }
+}
+
+.lidig-formSimple-relevanceBox {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  position: relative;
+  .lidig-formSimple-relevanceBox-btn {
+    position: absolute;
+    width: 40px;
+    right: -40px;
+  }
+}
+
+.lidig-form-simple-item {
+  .ant-form-item {
+    .ant-form-item-label {
+      label {
+        color: @ld-fc-wk;
+      }
+    }
+  }
+}
+
+.lidig-group-elements {
+  width: 100%;
+  border-bottom: 1px solid @border-color-base;
+  .ant-row {
+    padding: 0;
+    flex: auto;
+    > .ant-col:not(.ant-form-item-label) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .lidig-form-item-col {
+      margin-bottom: @ld-spacing-s;
+      flex: unset;
+      width: 100%;
+      .lidig-form-item {
+        margin: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .lidig-group-item-title {
+    font-size: @ld-font-m;
+    padding: 12px 0 0 32px;
+    margin: 0;
+    color: @info-color;
+    font-weight: 600;
+  }
+}
+
+.lidig-form-simple-button-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 12px 24px;
+}
+
+.lidig-form-simple-title {
+  height: 44px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid @border-color-base;
+}
+
+.lidig-form-simple-image {
+  height: auto;
+  width: 100px;
+}
+
+.lidig-form-simple-remake {
+  color: @text-color-inverse;
+  overflow: visible;
+  white-space: nowrap;
+}
+
+.lidig-form-simple-item-disabled {
+  .ant-form-item-label > label {
+    color: @ld-fc-wk;
+  }
+}
+
+.lidig-from-simple-segment-separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

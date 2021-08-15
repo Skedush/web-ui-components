@@ -1,0 +1,43 @@
+@import '/themes/index.less';
+.lidig-select-selectBox {
+  display: inline-block;
+  width: 100%;
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    color: @ld-fc-ma;
+    background-color: @ld-form-bg;
+    height: 33px;
+    border: 1px solid @ld-form-bd;
+    &:focus,
+    &:hover {
+      border-color: @ld-form-foucs-bd;
+    }
+  }
+
+  .ant-select-clear {
+    background-color: @ld-form-bg;
+  }
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: @ld-fc-es;
+    opacity: 1; /* Firefox */
+  }
+}
+
+.ant-form-item-has-error .ant-select:not(.ant-select-disabled):not(.ant-select-customize-input) {
+  .ant-select-selector {
+    background: @ld-form-error-bg !important;
+  }
+}
+
+.lidig-select-option {
+  .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+    background-color: @ld-form-bg;
+  }
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+    background-color: @ld-form-foucs-bg;
+  }
+}
+
+.has-error .ant-select-selection {
+  background: #f3e1e1 !important;
+}

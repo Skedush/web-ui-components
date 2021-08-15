@@ -1,0 +1,260 @@
+// 主色调: 主按钮，选中状态(填充或描边)，安全色
+@primary-color: @br10;
+
+// 按钮状态
+// 默认显示
+@btn-primary-color: @br10;
+// 鼠标悬浮时按钮颜色
+@item-hover-bg: @br9;
+
+// 鼠标悬浮时按钮颜色
+@button-hover-bg: @br10;
+// 辅助按钮主色
+@btn-normal-color: @as10;
+
+// 鼠标点击时按钮颜色
+@item-active-bg: #0daae5;
+// 操作按钮默认颜色
+@btn-default-color: #aab5cc;
+// 不可点击状态
+@btn-disable-color: #e1e7f3;
+
+// 辅助色: 次要按钮，未选中icon
+@normal-color: @as10;
+// 悬浮按钮颜色
+@normal-hover-color: #b2bcd1;
+// 点击按钮颜色
+@normal-active-color: #99a3b8;
+
+// 默认icon颜色
+// @icon-color: #fff;
+
+// 表格头部背景颜色
+@table-header-background: #f4f6f9;
+
+// 弹框组件头部颜色
+@header-background: @br1;
+
+// 背景色: 整体背景颜色，输入框选择器背景色
+@body-background: #d5e2f2;
+
+// 前景色: 大模块的背景颜色，和整体背景色对比
+@component-background: #fff;
+
+// 前景色2: 鼠标悬浮背景色
+@table-row-hover-bg: rgba(42, 131, 255, 0.1);
+
+// 描边色: 头部，分割线，描边分割，列表头尾部
+@border-color-base: #fff;
+
+// 输入框边框色
+@border-color-base-input: #b6c4d9;
+
+// 品牌色: 普通消息提示与展示
+@info-color: @br10;
+// 安全色: 保存，成功、正常
+@alert-success-icon-color: @sa10;
+@alert-success-bg-color: #edf6ed;
+@alert-success-border-color: #b7dbb9;
+
+// 告警色(初级): 初级：普通告警，需要留意
+@alert-info-icon-color: @re10;
+@alert-info-bg-color: #f5ecdd;
+// 告警色(中级): 中级：一般告警，需要注意
+@alert-warning-icon-color: @no10;
+@alert-warning-bg-color: #fff4ea;
+@alert-warning-broder-color: #ffd4ad;
+
+// 告警色(高级): 高级：终极告警，马上处理
+@alert-error-icon-color: @wa10;
+@alert-error-bg-color: #ffeeee;
+@alert-error-border-color: #ffbdbd;
+
+// 加载状态配色
+@alert-loading-icon-color: @primary-color;
+@alert-loading-bg-color: @br1;
+@alert-loading-border-color: #aaceff;
+
+//颜色填充按钮文字颜色
+@fill-btn-text-color: #fff;
+@ghost-btn-text-color: #7688a7;
+
+// 重点文字: 选中文字;重点标记文字(如:图标上标数字)
+@text-color: @br10;
+// 普通文字: 次要按钮，未选中icon
+@text-color-secondary: #333;
+// 弱化文字: 提示、说明类文字
+@text-color-inverse: #999;
+// 背景上文字颜色
+@text-selection-bg: #fff;
+
+// 选中文字背景色
+@selected-text-bg: fadeout(@primary-color, 40%);
+
+/*
+*
+*
+*下面是新定义的颜色变量
+**/
+
+@br10: #2a84ff;
+@br9: tint(@br10, 10%);
+@br8: tint(@br10, 20%);
+@br7: tint(@br10, 30%);
+@br6: tint(@br10, 40%);
+@br5: tint(@br10, 50%);
+@br4: tint(@br10, 60%);
+@br3: tint(@br10, 70%);
+@br2: tint(@br10, 80%);
+@br1: tint(@br10, 90%);
+
+@as10: #7688a7;
+@as9: tint(@as10, 10%);
+@as8: tint(@as10, 20%);
+@as7: tint(@as10, 30%);
+@as6: tint(@as10, 40%);
+@as5: tint(@as10, 50%);
+@as4: tint(@as10, 60%);
+@as3: tint(@as10, 70%);
+@as2: tint(@as10, 80%);
+@as1: tint(@as10, 90%);
+
+@sa10: #4aa54f;
+@sa9: tint(@sa10, 10%);
+@sa8: tint(@sa10, 20%);
+@sa7: tint(@sa10, 30%);
+@sa6: tint(@sa10, 40%);
+@sa5: tint(@sa10, 50%);
+@sa4: tint(@sa10, 60%);
+@sa3: tint(@sa10, 70%);
+@sa2: tint(@sa10, 80%);
+@sa1: tint(@sa10, 90%);
+
+@re10: #ffc233;
+@re9: tint(@re10, 10%);
+@re8: tint(@re10, 20%);
+@re7: tint(@re10, 30%);
+@re6: tint(@re10, 40%);
+@re5: tint(@re10, 50%);
+@re4: tint(@re10, 60%);
+@re3: tint(@re10, 70%);
+@re2: tint(@re10, 80%);
+@re1: tint(@re10, 90%);
+
+@no10: #ff9333;
+@no9: tint(@no10, 10%);
+@no8: tint(@no10, 20%);
+@no7: tint(@no10, 30%);
+@no6: tint(@no10, 40%);
+@no5: tint(@no10, 50%);
+@no4: tint(@no10, 60%);
+@no3: tint(@no10, 70%);
+@no2: tint(@no10, 80%);
+@no1: tint(@no10, 90%);
+
+@wa10: #ff5a5a;
+@wa9: tint(@wa10, 10%);
+@wa8: tint(@wa10, 20%);
+@wa7: tint(@wa10, 30%);
+@wa6: tint(@wa10, 40%);
+@wa5: tint(@wa10, 50%);
+@wa4: tint(@wa10, 60%);
+@wa3: tint(@wa10, 70%);
+@wa2: tint(@wa10, 80%);
+@wa1: tint(@wa10, 90%);
+//文字颜色
+@ld-fc-br: @br10;
+@ld-fc-as: @as10;
+// 填充色中文字
+@ld-fc-wt: #fff;
+// 普通文字
+@ld-fc-ma: #333;
+// 弱化文字1
+@ld-fc-es: #666;
+// 弱化文字2
+@ld-fc-wk: #999;
+@ld-fc-mk: @as5;
+@ld-fc-warning: @wa10;
+
+// 按钮中文字
+@ld-btn-text: @ld-fc-wt;
+// 幽灵按钮文字
+@ld-btn-dashed-text: @ld-fc-as;
+
+//master按钮
+@ld-btn-master-bg: @br10;
+@ld-btn-master-hover-bg: @br8;
+@ld-btn-master-disable-bg: @br5;
+
+//second按钮
+@ld-btn-second-bg: @as10;
+@ld-btn-second-hover-bg: @as8;
+@ld-btn-second-disable-bg: @as5;
+
+//reset按钮
+@ld-btn-reset-bg: @as10;
+@ld-btn-reset-hover-bg: @as8;
+@ld-btn-reset-disable-bg: @as5;
+
+//icon按钮
+@ld-btn-icon-color: @br10;
+
+// Form输入
+@ld-form-bg: @br1;
+@ld-form-bd: @as4;
+@ld-form-foucs-bg: @br2;
+@ld-form-foucs-bd: @br7;
+@ld-form-error-bg: @wa1;
+@ld-form-icon: @as10;
+
+@ld-form-foucs: @br10;
+@ld-form-disabled-bg: @re1;
+@ld-form-disabled-bd: @re4;
+// 未选中不可用
+@ld-form-check-disabled: @as5;
+// 已选中描边
+@ld-form-checked-bd: @br4;
+// 选择框已选中不可用
+@ld-form-checked-disabled: @br5;
+
+// icon
+@ld-icon-color: @as10;
+// 填充色中icon颜色
+@ld-icon-fill-color: #fff;
+@ld-icon-active: @br10;
+
+// icon背景色
+@ld-icon-primary-bg: @br10;
+@ld-icon-default-bg: @as5;
+@ld-icon-warning-bg: @re10;
+@ld-icon-success-bg: @sa10;
+@ld-icon-error-bg: @wa10;
+
+//页面背景
+@ld-header-bg: @br2;
+@ld-bg: #fff;
+@ld-back-bg: @as1;
+@ld-border: @as4;
+//border
+@ld-bd: @as10;
+@ld-table-bd: @as4;
+//投影
+@ld-box-shadow: @as5;
+
+@ld-hover-bg: @br1;
+
+//Table
+@ld-table-header-bg: @br2;
+@ld-table-btn-bg: @br3;
+@ld-table-btn-border-active: @br10;
+@ld-table-row-hover-bg: @br1;
+@ld-table-row-select-bg: @br3;
+
+@btn-normal-color-9: tint(@btn-normal-color, 10%);
+
+@ld-scrollbar-thumb: @as7;
+@ld-scrollbar-thumb-hover: @as10;
+@ld-scrollbar-track-bg: @br1;
+
+@ld-descriptions-label-bg: @br1;
+@ld-descriptions-bd: @as4;

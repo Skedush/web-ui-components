@@ -1,0 +1,31 @@
+@import '/themes/index.less';
+
+.lidig-textarea {
+  display: inline-block;
+  width: 100%;
+  .ant-input {
+    width: 100%;
+    background-color: @ld-form-bg;
+    color: @ld-fc-ma;
+    border: 1px solid @ld-form-bd;
+    &:focus,
+    &:hover {
+      border-color: @ld-form-foucs-bd;
+    }
+  }
+  .ant-input-affix-wrapper {
+    background-color: @ld-form-bg;
+  }
+
+  // .ant-input-disabled {
+  //   background: fadeout(@btn-disable-color, 65%) !important;
+  //   color: @text-color-inverse;
+  //   border-color: @btn-disable-color;
+  // }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: @ld-fc-es;
+    opacity: 1; /* Firefox */
+  }
+}

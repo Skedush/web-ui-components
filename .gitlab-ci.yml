@@ -1,0 +1,54 @@
+variables:
+  COMPOSER_CACHE_DIR: '/cache/composer'
+  DOCKER_DRIVER: overlay2
+
+before_script:
+  # Install ssh-agent through openssh-client if not present
+  - 'which ssh-agent || ( apt-get update -qy && apt-get install openssh-client -qqy )'
+  # Add the private key to this user
+  - eval $(ssh-agent -s) && ssh-add <(echo "$SSH_PRIVATE_KEY") && mkdir -p ~/.ssh
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+stages:
+  - prepare
+  - test
+  - deploy
+
+install_deps:
+  stage: prepare
+  cache:
+    key: $CI_COMMIT_REF_SLUG-$CI_PROJECT_DIR
+    paths:
+      - node_modules/
+  script:
+    - yarn install
+  tags:
+    - 18runner
+
+#lint:
+  #stage: test
+  #cache:
+    #key: $CI_COMMIT_REF_SLUG-$CI_PROJECT_DIR
+    #paths:
+      #- node_modules/
+    #policy: pull
+  #script:
+    #- yarn run lint
+  #except:
+    #- master
+
+dev:
+  stage: deploy
+  cache:
+    key: $CI_COMMIT_REF_SLUG-$CI_PROJECT_DIR
+    paths:
+      - node_modules/
+    policy: pull
+  script:
+    - yarn build-storybook
+    - ssh admin@192.168.70.10 'sudo rm -r /home/admin/front-web/html/web-base-ui/*'
+    - scp -r storybook-static/* admin@192.168.70.10:/home/admin/front-web/html/web-base-ui
+  tags:
+    - 18runner
+  except:
+    - master

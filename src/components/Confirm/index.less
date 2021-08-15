@@ -1,0 +1,75 @@
+@import '/themes/index.less';
+
+.lidig-confirm-modal {
+  z-index: 9999;
+  .ant-modal-content {
+    background: @component-background;
+  }
+  .ant-modal-body {
+    padding: 0;
+    border-radius: 0 0 8px 8px;
+  }
+  .ant-modal-header {
+    border-bottom: 0;
+  }
+  .ant-modal-title {
+    font-weight: bold;
+  }
+}
+.lidig-confirm-select {
+  background: #2a84ff;
+}
+.lidig-confirm-second {
+  background: #8494b0;
+}
+
+.lidig-confirm-titleColor {
+  color: @text-color-secondary;
+}
+
+.lidig-confirm-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  span {
+    margin-left: 10px;
+  }
+  .anticon {
+    font-size: 22px;
+  }
+}
+.lidig-confirm-warning {
+  color: #f15362;
+}
+.lidig-confirm-content {
+  font-size: 16px;
+  padding: 24px;
+  color: @text-color-secondary;
+}
+
+.lidig-confirm-question {
+  color: @alert-warning-icon-color;
+}
+.lidig-confirm-success {
+  color: @alert-success-icon-color;
+}
+.lidig-confirm-info {
+  color: @primary-color;
+}
+.lidig-confirm-buttonGroup {
+  display: flex;
+  justify-content: center;
+  // padding: 0 15px 15px;
+  margin-top: 24px;
+  height: 56px;
+  button {
+    margin-right: 10px;
+  }
+  button:first-child {
+    margin-left: 0;
+  }
+}
+
+.lidig-confirm-statusIcon {
+  font-size: 18px;
+}
